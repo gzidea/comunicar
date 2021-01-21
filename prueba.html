@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="preuba.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+    <input id="activar" name="activar" type="checkbox">
+        <label class="inputlabel" for="activar">Clic para ver contenido</label>
+        <div class="desplegable" id="show-noticias" >Aquí podría ir cualquier tipo de elemento</div>
+        <div id="myDIV" >Aquí podría ir cualquier tipo de elemento</div>
+    <input type="text">
+
+    <div id = "selectableTab">
+        <h2>selectable</h2>
+        <ul id = "selectable">
+        <li>alpha</li>
+        <li>beta</li>
+        <li>gamma</li>
+        <li>delta</li>
+        </ul>
+       </div>
+
+    <script id="MainScript">
+        $(document).ready(function() {
+            $("#selectable").selectable();
+        }
+        
+        
+        /*$("#show-noticias").on('click', function() {
+            var x = document.getElementById("myDIV");
+            
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        });*/
+    </script>
+</body>
+</html>

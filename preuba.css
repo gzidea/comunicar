@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(197, 61, 7);
+    font-size: 1.0em;
+}
+#activar ~ .desplegable {
+    display: none;
+    overflow: hidden;
+}
+#activar:checked ~ .desplegable {
+    display: block;
+}
+
+#selectable .ui-selecting {
+    background-color: gray;
+   }
+   #selectable .ui-selected {
+    background-color: black;
+    color: white;
+   }
