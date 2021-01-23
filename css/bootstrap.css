@@ -4031,7 +4031,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin: 0;
   }
   .navbar-nav > li {
-    float: left;
+    float: left; /*GFZ*/
     list-style-type: none;
   }
   .navbar-nav > li > a {
@@ -6346,7 +6346,7 @@ button.close {
   color: #18bc9c;
 }
 .navbar-brand {
-  padding: 18.5px 15px 20.5px;
+  padding: 18.5px 15px 20.5px; /*GFZ*/
 }
 .btn:active {
   -webkit-box-shadow: none;

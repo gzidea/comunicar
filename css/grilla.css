@@ -1,15 +1,16 @@
 .wrapper {
+  background-color: slategrey;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 5px;
     grid-auto-rows: minmax(5px, Auto);
-    
+    height: 40px;
   }
 
   .wrapper > div {
     position: relative;
     display: block;
-    padding: 10px 15px;
+    padding: 0px 0px;
     font-size: medium;
   }
   .wrapper > div:hover,
@@ -20,18 +21,50 @@
 
   .one {
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 6;
     grid-row: 1;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
+  }
+
+  .one .navbar-brand {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    /*float: left;*/
+    padding: 19.5px 15px;
+    font-size: 19px;
+    line-height: 21px;
+    height: 20px;
+    padding: 0px 15px 20.5px; /*GFZ*/
+  }
+
+  .one .navbar-brand > a {
+    padding-top: 0;
+  }
+
+  @media (min-width: 768px) {
+    
+    .one .navbar-brand {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      /*float: left;*/
+      padding: 19.5px 15px;
+      font-size: 19px;
+      line-height: 21px;
+      height: 20px;
+      padding: 0px 15px 20.5px; /*GFZ*/
+    }
+  
+    .one .navbar-brand > a {
+      padding-top: 0;
+    }   
   }
 
   .one > i > a{
     padding-left: 10px;
   }
 
-  .one > ul {
+  .one > ul > li {
     position: relative;
     display: block;
   }
@@ -51,4 +84,17 @@
   .three {
     grid-column: 5;
     grid-row: 1;
+  }
+
+  .btn-floating {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+  }
+  .btn-floating > i {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 20px;
+    width: 20px;
   }

@@ -1185,7 +1185,7 @@ M.AutoInit = function (context) {
     TapTarget: root.querySelectorAll('.tap-target:not(.no-autoinit)'),
     Timepicker: root.querySelectorAll('.timepicker:not(.no-autoinit)'),
     Tooltip: root.querySelectorAll('.tooltipped:not(.no-autoinit)'),
-    FloatingActionButton: root.querySelectorAll('.fixed-action-btn:not(.no-autoinit)')
+    FloatingActionButton: root.querySelectorAll('.gfzfixed-action-btn:not(.no-autoinit)')
   };
 
   for (var pluginName in registry) {
@@ -8368,8 +8368,8 @@ $jscomp.polyfill = function (e, r, p, m) {
       _this48.isOpen = false;
       _this48.$anchor = _this48.$el.children('a').first();
       _this48.$menu = _this48.$el.children('ul').first();
-      _this48.$floatingBtns = _this48.$el.find('ul .btn-floating');
-      _this48.$floatingBtnsReverse = _this48.$el.find('ul .btn-floating').reverse();
+      _this48.$floatingBtns = _this48.$el.find('ul .gfzbtn-floating');
+      _this48.$floatingBtnsReverse = _this48.$el.find('ul .gfzbtn-floating').reverse();
       _this48.offsetY = 0;
       _this48.offsetX = 0;
 
